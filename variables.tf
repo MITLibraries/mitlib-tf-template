@@ -31,7 +31,17 @@ variable "environment" {
   type        = string
 }
 
-variable "ssm_path" {
-  description = "The SSM (Parameter Store) path where secrets are written/retrieved."
+variable "tfoutput_ssm_path" {
+  description = "Standard prefix in Parameter Store for generic Terraform outputs (typically needed by other infra code)"
+  type        = string
+}
+
+variable "appinput_ssm_path" {
+  description = "Standard prefix in Parameter Store for Terraform outputs specifically needed by <app-name>"
+  type        = string
+}
+
+variable "tfinput_ssm_path" {
+  description = "Standard prefix in Parameter Store for inputs to Terraform for initial infrastructure builds"
   type        = string
 }
