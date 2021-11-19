@@ -1,9 +1,7 @@
-# Terraform PR Template
-
 #### Developer Checklist
 
-- [ ] The README contains the correct list of dependencies, inputs, and outputs (e.g., `terraform-docs markdown .` has been run and copied)
-- [ ] Any special variables have values configured in the Terraform Cloud workspace
+- [ ] The README contains the correct list of dependencies, inputs, and outputs (e.g., `terraform-docs markdown . --html=false --anchor=false` has been run and copied)
+- [ ] Any special variables have values configured in AWS SSM
 - [ ] Stakeholder approval has been confirmed (or is not needed)
 
 #### What does this PR do?
