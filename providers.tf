@@ -7,7 +7,6 @@
 #  app-repo   = "name of GitHub repo for dependent app"
 #  project-id  = "if this is part of a larger project, that project name"
 
-
 provider "aws" {
   region = var.aws_region
   default_tags {
