@@ -27,7 +27,7 @@ After deploying this, the following steps must be completed.
 └── versions.tf
 ```
 
-
+## TF markdown is automatically inserted at the bottom of this file, nothing should be written beyond this point
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
