@@ -1,6 +1,6 @@
 #### Developer Checklist
 
-- [ ] The README contains the correct list of dependencies, inputs, and outputs (e.g., `terraform-docs markdown . --html=false --anchor=false` has been run and copied)
+- [ ] The README contains any additional info needed outside of the terraform docs generated
 - [ ] Any special variables have values configured in AWS SSM
 - [ ] Stakeholder approval has been confirmed (or is not needed)
 
@@ -19,7 +19,7 @@ Delete this section if it isn't applicable to the PR.
 
 #### What are the relevant tickets?
 
-Include links to Jira Software and/or Jira Service Managament tickets here.
+Include links to Jira Software and/or Jira Service Management tickets here.
 
 #### Requires Database Migrations?
 

@@ -27,12 +27,27 @@ After deploying this, the following steps must be completed.
 └── versions.tf
 ```
 
+## TF markdown is automatically inserted at the bottom of this file, nothing should be written beyond this point
+
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | terraform | ~> 1.0 |
 | aws | ~> 3.0 |
+
+## Providers
+
+No providers.
+
+## Modules
+
+No modules.
+
+## Resources
+
+No resources.
 
 ## Inputs
 
@@ -46,3 +61,8 @@ After deploying this, the following steps must be completed.
 | ou | The name of the AWS OU that contains the AWS Accounts that are managed by this code. | `string` | n/a | yes |
 | tfinput\_ssm\_path | Standard prefix in Parameter Store for inputs to Terraform for initial infrastructure builds | `string` | n/a | yes |
 | tfoutput\_ssm\_path | Standard prefix in Parameter Store for generic Terraform outputs (typically needed by other infra code) | `string` | n/a | yes |
+
+## Outputs
+
+No outputs.
+<!-- END_TF_DOCS -->
