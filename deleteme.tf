@@ -20,7 +20,7 @@ locals {
   # betwee the quotes. And, all instances of "_resource" must be replaced with an 
   # identifier that matches the file/resources that are created by this file.
   #
-  name_resource     = "" 
+  name_resource     = ""
   fullname_resource = local.project_id == null ? "${var.environment}-${var.name}-${local.name_resource}" : "${var.environment}-${local.project_id}-${var.name}-${local.name_resource}"
 
   tags_resource = {
