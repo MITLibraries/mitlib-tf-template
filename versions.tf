@@ -1,8 +1,9 @@
+################################################################################
 # All version requirements for Terraform and Terraform Providers are set here.
 # Providers themselves are set in the `providers.tf` file.
 
 terraform {
-  required_version = "~> 1.0"
+  required_version = "~> 1.1"
 
   required_providers {
     aws = {

@@ -7,7 +7,7 @@ variable "aws_region" {
 
 # The following variables are used for consistent naming of repositories and workspaces 
 # as well as for consistent locations for sensitive values store in SSM.
-# Values for these are set in Terrafaorm Cloud workspaces by the mitlib-tfc-mgmt
+# Values for these are set in Terraform Cloud workspaces by the mitlib-tfc-mgmt
 # repository.
 
 variable "mitlib" {
