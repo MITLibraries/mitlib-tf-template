@@ -39,7 +39,7 @@ After deploying this, the following steps must be completed.
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 1.0 |
+| terraform | ~> 1.1 |
 | aws | ~> 3.0 |
 
 ## Providers
