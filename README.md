@@ -4,11 +4,11 @@ Template for Terraform repos for MIT Libraries.
 
 After deploying this, the following steps must be completed.
 
-1. Update the `terraform { }` block in `main.tf` to name the correct workspace in Terraform Cloud (or remove the backend completely if this will be running solely in Terraform Cloud).
+1. Update the `terraform { }` block in `main.tf`. We now use the `cloud {}` block to link to workspaces in Terraform Cloud. The very first thing to do is set the correct tags in the `workspaces {}` block.
 1. Update `main.tf` to include any additional Terraform Provider(s).
-1. Update the `terraform { required_providers { } }` block `versions.tf` to set the location and constraints on the additional providers.
-1. Update the `locals{}` block in `main.tf` to provide a project-id (only if necessary)
-1. Copy the `locals{}` block from the `deleteme.tf` file and paste it into each resource-creating `.tf` file. 
+1. Update the `terraform { required_providers { } }` block in `versions.tf` to set the location and constraints on the additional providers.
+1. **Optional**: Update the `locals {}` block in `main.tf` to provide a project-id.
+1. Copy the `locals {}` block from the `deleteme.tf` file and paste it into each `.tf` file that will create named resources.
 1. Delete the `deleteme.tf` file.
 1. Delete the file tree below.
 
@@ -39,7 +39,7 @@ After deploying this, the following steps must be completed.
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 1.0 |
+| terraform | ~> 1.1 |
 | aws | ~> 3.0 |
 
 ## Providers

@@ -13,7 +13,7 @@ defaults:
 
 jobs:
   validate-terraform:
-    name: Validate Terraform 1.0.4
+    name: Validate Terraform 1.1.4
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,7 +22,7 @@ jobs:
       - name: Terraform Setup
         uses: hashicorp/setup-terraform@v1
         with:
-          terraform_version: 1.0.4
+          terraform_version: 1.1.4
       
       - name: Check format and validate
         run:
