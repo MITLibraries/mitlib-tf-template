@@ -12,10 +12,13 @@ on:
 
 jobs:
   validate:
-    uses: mitlibraries/.github/.github/workflows/tf-validate-shared.yml@terraform-flows
+    name: Validate Terraform
+    uses: mitlibraries/.github/.github/workflows/tf-validate-shared.yml@main
 
   security-check:
-    uses: mitlibraries/.github/.github/workflows/tf-checkov-shared.yml@terraform-flows
+    name: Checkov Tests
+    uses: mitlibraries/.github/.github/workflows/tf-checkov-shared.yml@main
 
   docs-update:
-    uses: mitlibraries/.github/.github/workflows/tf-docs-gen-shared.yml@terraform-flows
+    name: Update README
+    uses: mitlibraries/.github/.github/workflows/tf-docs-gen-shared.yml@main
