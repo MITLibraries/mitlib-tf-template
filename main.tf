@@ -25,3 +25,6 @@ terraform {
 locals {
   project_id = null # change to "project-id-name" if this is part of a larger project
 }
+
+# Capture the AWS account number and capture the default managed key for SSM in KMS
+data "aws_caller_identity" "current" {}

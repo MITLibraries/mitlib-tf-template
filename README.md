@@ -4,12 +4,13 @@ Template for Terraform repos for MIT Libraries.
 
 After deploying this, the following steps must be completed.
 
-1. Update the `terraform { }` block in `main.tf`. We now use the `cloud {}` block to link to workspaces in Terraform Cloud. The very first thing to do is set the correct tags in the `workspaces {}` block.
-1. Update `main.tf` to include any additional Terraform Provider(s).
-1. Update the `terraform { required_providers { } }` block in `versions.tf` to set the location and constraints on the additional providers.
-1. **Optional**: Update the `locals {}` block in `main.tf` to provide a project-id.
-1. Copy the `locals {}` block from the `deleteme.tf` file and paste it into each `.tf` file that will create named resources.
-1. Delete the `deleteme.tf` file.
+1. Update the `terraform { }` block in [main.tf](./main.tf). We now use the `cloud {}` block to link to workspaces in Terraform Cloud. The very first thing to do is set the correct tags in the `workspaces {}` block.
+1. Update [main.tf](./main.tf) to include any additional Terraform Provider(s).
+1. Update the `terraform { required_providers { } }` block in [versions.tf](./versions.tf) to set the location and constraints on the additional providers.
+1. **Optional**: Update the `locals {}` block in [main.tf](./main.tf) to provide a project-id.
+1. **Optional**: Update the `tags {}` block in [providers.tf](./providers.tf) to enable a backup plan via AWS Backups
+1. Copy the `locals {}` block from the [deleteme.tf](./deleteme.tf) file and paste it into each `.tf` file that will create named resources.
+1. Delete the [deleteme.tf](./deleteme.tf) file.
 1. Delete the file tree below.
 
 ## File Tree
@@ -21,11 +22,14 @@ After deploying this, the following steps must be completed.
 ├── deleteme.tf
 ├── docs
 │   └── adrs
-│       └── 0001-record-architecture-decisions.md
+│       ├── 0001-record-architecture-decisions.md
+│       └── 0002-upgrade-to-cloud-block.md
 ├── main.tf
 ├── modules
 │   └── README.md
 ├── providers.tf
+├── ssm_inputs.tf
+├── ssm_outputs.tf
 ├── tests
 │   └── README.md
 ├── variables.tf
@@ -39,12 +43,14 @@ After deploying this, the following steps must be completed.
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 1.1 |
+| terraform | ~> 1.2 |
 | aws | ~> 3.0 |
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| aws | ~> 3.0 |
 
 ## Modules
 
@@ -52,7 +58,9 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 
 ## Inputs
 
