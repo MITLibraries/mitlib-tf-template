@@ -8,6 +8,8 @@
 # in main.tf.
 # Optional tags are in comments below:
 #  app-repo   = "name of GitHub repo for app that depends on this infrastructure"
+#  backup_enabled = true/false (determines if AWS Backup backs up tagged resources)
+#  backup_type = "local_30" || "local_14" || "local_7" || "remote_30" || "remote_14" (pick one, see mitlib-tf-workloads-awsbackups for details)
 
 
 provider "aws" {
@@ -19,7 +21,7 @@ provider "aws" {
       environment  = var.environment
       ou           = var.ou
       terraform    = "true"
-      infra-repo   = "mitlib-tf-${var.name}"
+      infra-repo   = "mitlib-tf-${var.ou}-${var.name}"
       contains-pii = "false"
     }
   }
