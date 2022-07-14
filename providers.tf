@@ -8,8 +8,13 @@
 # in main.tf.
 # Optional tags are in comments below:
 #  app-repo   = "name of GitHub repo for app that depends on this infrastructure"
-#  backup_enabled = true/false (determines if AWS Backup backs up tagged resources)
-#  backup_type = "local_30" || "local_14" || "local_7" || "remote_30" || "remote_14" (pick one, see mitlib-tf-workloads-awsbackups for details)
+#  backup_enable = true/false (determines if AWS Backup backs up tagged resources)
+#  backup_type = "local" || "remote" (determines if AWS Backup copies the recovery 
+#                                     point to a separate AWS Account)
+#  backup_length = "7" || "14" || "30" (determines retention period for recovery 
+#                                       points)
+# These values can be set here and they will apply to all resources created by this
+# repo. Or, these can be set as additional tags on individual resources.
 
 
 provider "aws" {
