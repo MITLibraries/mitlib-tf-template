@@ -44,13 +44,13 @@ After deploying this, the following steps must be completed.
 | Name | Version |
 |------|---------|
 | terraform | ~> 1.2 |
-| aws | ~> 3.0 |
+| aws | ~> 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | ~> 3.0 |
+| aws | ~> 4.0 |
 
 ## Modules
 
