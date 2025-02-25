@@ -9,6 +9,7 @@ on:
       - 'main'
     paths:
       - '**/*.tf'
+permissions: read-all
 
 jobs:
   validate:
