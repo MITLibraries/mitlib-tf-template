@@ -118,7 +118,7 @@ This section provides a description of CloudWatch logging and any monitoring in 
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 1.10 |
+| terraform | ~> 1.11 |
 | aws | ~> 5.0 |
 
 ## Providers
