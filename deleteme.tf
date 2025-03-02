@@ -6,18 +6,17 @@
 # The Infra dev will need to update the string for the first row in this
 # locals block to an appropriate name for the resources created in this
 # file. Depending on the repository, the actual name of the variable might
-# also need to be changed. When that is done, ALL occurences of the "_resource"
+# also need to be changed. When that is done, ALL occurrences of the "_resource"
 # must be replaced in the file.
 # The text in the variable name after the underscore is necessary to distinguish
 # the naming in this file from the naming in other files in this repository.
 #
 # The locals block below should be copied and pasted into resource-creating .tf
 # files. Then, this file should be deleted.
-#
 
 locals {
   # This is the base name for resources for this app. A string must be entered
-  # betwee the quotes. And, all instances of "_resource" must be replaced with an 
+  # between the quotes. And, all instances of "_resource" must be replaced with an 
   # identifier that matches the file/resources that are created by this file.
   #
   name_resource     = ""
