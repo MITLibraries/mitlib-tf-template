@@ -22,4 +22,4 @@ jobs:
 
   docs-update:
     name: Update README
-    uses: mitlibraries/.github/.github/workflows/tf-docs-gen-shared.yml@main
+    uses: mitlibraries/.github/.github/workflows/tf-docs-shared.yml@main
