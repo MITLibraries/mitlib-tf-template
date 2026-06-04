@@ -117,15 +117,15 @@ This section provides a description of CloudWatch logging and any monitoring in 
 ## Requirements
 
 | Name | Version |
-|------|---------|
-| terraform | ~> 1.10 |
-| aws | ~> 5.0 |
+| ---- | ------- |
+| terraform | ~> 1.15 |
+| aws | ~> 6.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| aws | 5.88.0 |
+| ---- | ------- |
+| aws | 6.47.0 |
 
 ## Modules
 
@@ -134,13 +134,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | appinput\_ssm\_path | Standard prefix in Parameter Store for Terraform outputs specifically needed by <app-name> | `string` | n/a | yes |
 | aws\_region | The AWS region where this infrastructure will be deployed. | `string` | `"us-east-1"` | no |
 | environment | The name of the environment/stage/workspace (e.g., `stage`, `prod`, `dev`) | `string` | n/a | yes |
