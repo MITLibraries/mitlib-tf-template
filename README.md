@@ -125,7 +125,7 @@ This section provides a description of CloudWatch logging and any monitoring in 
 
 | Name | Version |
 | ---- | ------- |
-| aws | 6.47.0 |
+| aws | 6.58.0 |
 
 ## Modules
 
